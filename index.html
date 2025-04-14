@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медицинский центр "Здоровье+"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>Здоровье+</span>
+            </a>
+            
+            <div class="burger-menu">
+                <div class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#doctors">Врачи</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            
+            <button class="appointment-btn" onclick="openAppointmentModal()">
+                Записаться
+            </button>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero" id="home">
+            <div class="floating-elements">
+                <div class="floating-element" style="width: 30px; height: 30px; top: 10%; left: 10%; animation-duration: 20s;"></div>
+                <div class="floating-element" style="width: 50px; height: 50px; top: 20%; left: 70%; animation-duration: 25s;"></div>
+                <div class="floating-element" style="width: 40px; height: 40px; top: 70%; left: 20%; animation-duration: 30s;"></div>
+                <div class="floating-element" style="width: 25px; height: 25px; top: 60%; left: 60%; animation-duration: 15s;"></div>
+            </div>
+            
+            <div class="hero-content">
+                <h1>Современная медицина для вашего здоровья</h1>
+                <p>Мы предлагаем высококачественные медицинские услуги с использованием передовых технологий и индивидуальным подходом к каждому пациенту.</p>
+                <div class="cta-buttons">
+                    <button class="cta-btn primary" onclick="openAppointmentModal()">
+                        Записаться на прием
+                    </button>
+                    <button class="cta-btn">
+                        Узнать больше
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about" id="about">
+            <div class="section-bg">
+                <i class="fas fa-hospital" style="top: 10%; left: 10%;"></i>
+                <i class="fas fa-stethoscope" style="bottom: 10%; right: 10%;"></i>
+            </div>
+            
+            <h2>О нашей клинике</h2>
+            <p class="subtitle">Мы стремимся обеспечить высочайший уровень медицинской помощи для наших пациентов</p>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Наша клиника">
+                </div>
+                
+                <div class="about-text">
+                    <h3>Медицинский центр "Здоровье+"</h3>
+                    <p>Наша клиника была основана в 2010 году с целью предоставления качественных медицинских услуг с использованием современных технологий и индивидуального подхода к каждому пациенту.</p>
+                    <p>Мы объединили команду высококвалифицированных специалистов с многолетним опытом работы в различных областях медицины, чтобы обеспечить комплексный подход к диагностике и лечению.</p>
+                    
+                    <ul class="advantages">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Современное оборудование</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Опытные врачи</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Индивидуальный подход</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Комфортные условия</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="about-stats">
+                <div class="stat-item">
+                    <i class="fas fa-user-md"></i>
+                    <h3>100</h3>
+                    <p>Квалифицированных врачей</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-procedures"></i>
+                    <h3>40</h3>
+                    <p>Отделений</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-smile"></i>
+                    <h3>10000</h3>
+                    <p>Довольных пациентов</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-award"></i>
+                    <h3>150</h3>
+                    <p>Медицинских наград</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="features">
+            <h2>Наши преимущества</h2>
+            <p class="subtitle">Почему пациенты выбирают нашу клинику</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Точная диагностика</h3>
+                    <p>Используем современное оборудование для точной и быстрой диагностики заболеваний.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Экономия времени</h3>
+                    <p>Минимальное время ожидания приема и быстрые результаты анализов.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-medical"></i>
+                    </div>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Персональный врач для каждого пациента и индивидуальные программы лечения.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comment-medical"></i>
+                    </div>
+                    <h3>Консультации онлайн</h3>
+                    <p>Возможность дистанционных консультаций с нашими специалистами.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Современные методы</h3>
+                    <p>Применяем новейшие методики лечения и реабилитации.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Забота о пациентах</h3>
+                    <p>Комфортные условия пребывания и внимательное отношение к каждому.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="services" id="services">
+            <div class="section-bg">
+                <i class="fas fa-heartbeat" style="top: 20%; right: 10%;"></i>
+                <i class="fas fa-brain" style="bottom: 15%; left: 15%;"></i>
+            </div>
+            
+            <h2>Наши услуги</h2>
+            <p class="subtitle">Широкий спектр медицинских услуг для всей семьи</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2012&q=80" alt="Кардиология">
+                    </div>
+                    <div class="service-content">
+                        <h3>Кардиология</h3>
+                        <p>Диагностика и лечение заболеваний сердечно-сосудистой системы.</p>
+                        <ul>
+                            <li>ЭКГ и ЭхоКГ</li>
+                            <li>Суточное мониторирование</li>
+                            <li>Нагрузочные тесты</li>
+                            <li>Лечение гипертонии</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Подробнее <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Неврология">
+                    </div>
+                    <div class="service-content">
+                        <h3>Неврология</h3>
+                        <p>Диагностика и лечение заболеваний нервной системы.</p>
+                        <ul>
+                            <li>Лечение мигрени</li>
+                            <li>Реабилитация после инсульта</li>
+                            <li>Лечение остеохондроза</li>
+                            <li>Электронейромиография</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Подробнее <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Гастроэнтерология">
+                    </div>
+                    <div class="service-content">
+                        <h3>Гастроэнтерология</h3>
+                        <p>Диагностика и лечение заболеваний желудочно-кишечного тракта.</p>
+                        <ul>
+                            <li>Гастроскопия</li>
+                            <li>Колоноскопия</li>
+                            <li>УЗИ органов брюшной полости</li>
+                            <li>Лечение гастрита и язвы</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Подробнее <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Офтальмология">
+                    </div>
+                    <div class="service-content">
+                        <h3>Офтальмология</h3>
+                        <p>Диагностика и лечение заболеваний глаз.</p>
+                        <ul>
+                            <li>Проверка зрения</li>
+                            <li>Лечение катаракты</li>
+                            <li>Коррекция зрения</li>
+                            <li>Лечение глаукомы</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Подробнее <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1551601651-bc60f254d532?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ортопедия">
+                    </div>
+                    <div class="service-content">
+                        <h3>Ортопедия</h3>
+                        <p>Диагностика и лечение заболеваний опорно-двигательного аппарата.</p>
+                        <ul>
+                            <li>Лечение артрозов</li>
+                            <li>Реабилитация после травм</li>
+                            <li>Лечение сколиоза</li>
+                            <li>Протезирование суставов</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Подробнее <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Стоматология">
+                    </div>
+                    <div class="service-content">
+                        <h3>Стоматология</h3>
+                        <p>Комплексные стоматологические услуги для всей семьи.</p>
+                        <ul>
+                            <li>Лечение кариеса</li>
+                            <li>Имплантация</li>
+                            <li>Отбеливание</li>
+                            <li>Исправление прикуса</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Подробнее <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="doctors" id="doctors">
+            <h2>Наши врачи</h2>
+            <p class="subtitle">Профессионалы с большим опытом работы</p>
+            
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://p1.zoon.ru/preview/nH62ORv6y8OmX4irAB_Wbg/180x243x90/1/b/0/5ef899a3919cee3b4a39bf50_67807bac8acf67.60100312.jpg" alt="doctor">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Азиз Абдуллаевич Багандов</h3>
+                        <p class="specialty">Кардиолог</p>
+                        <p class="description">Специалист с 30-летним опытом работы в кардиологии, кандидат медицинских наук.</p>
+                        <a href="#" class="doctor-btn">Записаться</a>
+                    </div>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://prodoctorov.ru/media/photo/kaspiysk/doctorimage/618991/3050807-618991-gadzhiev_square.jpg" alt="doctor">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Гаджиев Магомед Муртузалиевич</h3>
+                        <p class="specialty">Невролог</p>
+                        <p class="description">Врач высшей категории с 20-летним опытом, специалист по лечению мигрени.</p>
+                        <a href="#" class="doctor-btn">Записаться</a>
+                    </div>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://resizer-1.napopravku.ru/crop?width=170&height=170&gravity=north&type=webp&file=iblock%2Faj1%2F0hz%2Faj10hzbbyp1moiplgfy9scom1dskcxl9pwcytwpv.jpg&quality=100" alt="doctor">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Эльдарова Патимат Аслудиновна </h3>
+                        <p class="specialty">Гастроэнтеролог</p>
+                        <p class="description">Специалист по заболеваниям ЖКТ, автор научных работ по лечению язвенной болезни.</p>
+                        <a href="#" class="doctor-btn">Записаться</a>
+                    </div>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://kaspiysk.dimpoisk.ru/images/catalog/medium/df9205c208f985474c554b645e57f554.webp" alt="doctor">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Курбанов Артур Абдуллаевич</h3>
+                        <p class="specialty">Ортопед</p>
+                        <p class="description">Хирург-ортопед с 12-летним опытом, специалист по эндопротезированию суставов.</p>
+                        <a href="#" class="doctor-btn">Записаться</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://prodoctorov.ru/media/photo/kaspiysk/doctorimage/422990/3021949-422990-yahyaev_square.jpg" alt="doctor">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Яхьяев Марат-Гаджи Гадисович</h3>
+                        <p class="specialty">Стоматолог</p>
+                        <p class="description">Детский стоматолог, специалист по зубным каналам, местный лев, стаж 13 лет.</p>
+                        <a href="#" class="doctor-btn">Записаться</a>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="https://kaspiysk.mclekar.ru/upload/000/u1/7/9/gadzhieva-aida-kamilevna-photo-normal.jpg" alt="doctor">
+                        <div class="doctor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Гаджиева Аида Камилевна</h3>
+                        <p class="specialty">Пульмонолог</p>
+                        <p class="description">Прошла Клиническую ординатуру НКЦ отоларингологии ординатуру в г. Москва.Стаж работы - 12 лет</p>
+                        <a href="#" class="doctor-btn">Записаться</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="testimonials" id="testimonials">
+            <h2>Отзывы пациентов</h2>
+            <p class="subtitle">Что говорят о нас наши пациенты</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Очень благодарен врачам клиники за профессиональный подход и внимательное отношение. После курса лечения у кардиолога почувствовал себя намного лучше. Особенно хочу отметить современное оборудование и комфортные условия."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Иван Петров">
+                        <div class="author-info">
+                            <h4>Иван Петров</h4>
+                            <p>Пациент</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Хочу выразить благодарность доктору Смирновой за профессионализм и чуткость. После длительных проблем с желудком наконец-то получила правильное лечение и рекомендации. Клиника оставила только положительные впечатления."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ольга Сидорова">
+                        <div class="author-info">
+                            <h4>Ольга Сидорова</h4>
+                            <p>Пациент</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Приводила ребенка на прием к неврологу. Врач нашел подход даже к моему непоседливому сыну, провел тщательный осмотр и дал ценные рекомендации. Очень довольна сервисом и отношением персонала."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80" alt="Анна Козлова">
+                        <div class="author-info">
+                            <h4>Анна Козлова</h4>
+                            <p>Пациент</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="appointment">
+            <h2>Записаться на прием</h2>
+            <p class="subtitle">Оставьте заявку и мы свяжемся с вами для уточнения деталей</p>
+            
+            <form class="appointment-form" onsubmit="handleAppointmentSubmit(event)">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Услуга</label>
+                        <select id="service" name="service" required>
+                            <option value="">Выберите услугу</option>
+                            <option value="cardiology">Кардиология</option>
+                            <option value="neurology">Неврология</option>
+                            <option value="gastroenterology">Гастроэнтерология</option>
+                            <option value="ophthalmology">Офтальмология</option>
+                            <option value="orthopedics">Ортопедия</option>
+                            <option value="dentistry">Стоматология</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="doctor">Врач (необязательно)</label>
+                        <select id="doctor" name="doctor">
+                            <option value="">Любой доступный врач</option>
+                            <option value="ivanova">Др. Иванова А.П. (Кардиолог)</option>
+                            <option value="petrov">Др. Петров С.В. (Невролог)</option>
+                            <option value="smirnova">Др. Смирнова Е.А. (Гастроэнтеролог)</option>
+                            <option value="kuznetsov">Др. Кузнецов А.М. (Ортопед)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Желаемая дата</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Дополнительная информация</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Отправить заявку</button>
+            </form>
+        </section>
+        
+        <section class="gallery">
+            <h2>Наша галерея</h2>
+            <p class="subtitle">Фотографии нашей клиники и оборудования</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Клиника">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Оборудование">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Кабинет">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551601651-bc60f254d532?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Процедура">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Лаборатория">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ресепшн">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact" id="contact">
+            <h2>Контакты</h2>
+            <p class="subtitle">Как с нами связаться и где мы находимся</p>
+            
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Адрес</h3>
+                    <p>г. Москва, ул. Медицинская, 15</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Телефон</h3>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>+7 (800) 123-45-67 (бесплатно)</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@zdorovie-plus.ru</p>
+                    <p>appointment@zdorovie-plus.ru</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Часы работы</h3>
+                    <p>Пн-Пт: 8:00 - 20:00</p>
+                    <p>Сб-Вс: 9:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22455887738251446!2d37.618!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDQuOCJF!5e0!3m2!1sru!2sru!4v1635789012345!5m2!1sru!2sru" width="100%" height="400" style="border:0; border-radius:15px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+    <div id="appointmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAppointmentModal()">&times;</span>
+            <h2>Записаться на прием</h2>
+            <form id="appointmentForm" onsubmit="handleAppointmentSubmit(event)">
+                <div class="form-group">
+                    <label for="modal-name">Ваше имя</label>
+                    <input type="text" id="modal-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Телефон</label>
+                    <input type="tel" id="modal-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-email">Email</label>
+                    <input type="email" id="modal-email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="modal-service">Услуга</label>
+                    <select id="modal-service" name="service" required>
+                        <option value="">Выберите услугу</option>
+                        <option value="cardiology">Кардиология</option>
+                        <option value="neurology">Неврология</option>
+                        <option value="gastroenterology">Гастроэнтерология</option>
+                        <option value="ophthalmology">Офтальмология</option>
+                        <option value="orthopedics">Ортопедия</option>
+                        <option value="dentistry">Стоматология</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modal-date">Желаемая дата</label>
+                    <input type="date" id="modal-date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="modal-comment">Комментарий</label>
+                    <textarea id="modal-comment" name="comment"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О клинике</h3>
+                <p>Медицинский центр "Здоровье+" - это современная клиника с высококвалифицированными специалистами и передовым оборудованием.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> О нас</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Услуги</a></li>
+                    <li><a href="#doctors"><i class="fas fa-chevron-right"></i> Врачи</a></li>
+                    <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Отзывы</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Услуги</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Кардиология</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Неврология</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Гастроэнтерология</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Офтальмология</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Ортопедия</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Стоматология</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <ul class="contact-info-list">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Каспийск, ул. Орджонекидзе, 7</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+7 (495) 123-45-67</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@zdorovie-plus.ru</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Пн-Пт: 8:00 - 20:00<br>Сб-Вс: 9:00 - 18:00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
